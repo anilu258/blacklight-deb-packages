@@ -14,7 +14,7 @@ Checksums-Sha256:
  5b37f47b1e7e6e122e61dc6eca58e9bc4a0893706bbd3277a1f546482364c656 3142 cbacklight_0.1-1_all.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Mon, 30 Jul 2018 09:17:04 +0700
+Build-Date: Mon, 30 Jul 2018 09:31:03 +0700
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
