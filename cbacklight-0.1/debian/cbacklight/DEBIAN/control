@@ -1,0 +1,11 @@
+Package: cbacklight
+Version: 0.1-1
+Architecture: all
+Maintainer: Gorla Praveen <gorlapraveen@gmail.com>
+Installed-Size: 16
+Section: utils
+Priority: optional
+Homepage: <insert the upstream URL, if relevant>
+Description: Commandline brightness
+ It increase brightness, decrease brightness, set brightness, current brightness
+ ,nightmode and daymode by running the commands in the command line interface.

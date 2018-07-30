@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Mon, 30 Jul 2018 08:39:02 +0700
+Source: cbacklight
+Binary: cbacklight
+Architecture: source all
+Version: 0.1-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Gorla Praveen <gorlapraveen@gmail.com>
+Changed-By: Gorla Praveen <gorlapraveen@gmail.com>
+Description:
+ cbacklight - Commandline brightness
+Changes:
+ cbacklight (0.1-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: )
+Checksums-Sha1:
+ 945fe5391349519879cd00b08dd25b8695112764 831 cbacklight_0.1-1.dsc
+ bb7062c8b25e6b6947927df38f3cbee62009c77a 1448 cbacklight_0.1.orig.tar.xz
+ ed9f8387cee90c036c9afad86067aa1d2096ae8d 7976 cbacklight_0.1-1.debian.tar.xz
+ f3739129e4537643e4b36b157f97407a5a9bb715 3142 cbacklight_0.1-1_all.deb
+ 6e2b43cac7962ec8aff444307ee75ef32fb3b331 5132 cbacklight_0.1-1_amd64.buildinfo
+Checksums-Sha256:
+ c3c37def53ce50ac511ca95d8bd0aa8ca194f2fc05c9c85c550ac8e13b972d02 831 cbacklight_0.1-1.dsc
+ afd1e65b032bbbbe88a86b8b96566409ccb5943ead978b7b44690cce17318275 1448 cbacklight_0.1.orig.tar.xz
+ 8985d6f214172d37bb30400bbf3a60a2587dd43257f3a1694775584b72bf3014 7976 cbacklight_0.1-1.debian.tar.xz
+ 5b37f47b1e7e6e122e61dc6eca58e9bc4a0893706bbd3277a1f546482364c656 3142 cbacklight_0.1-1_all.deb
+ e077cf1fe75d5056d2e66342743076d9ae10c5f980594260061909def357dca1 5132 cbacklight_0.1-1_amd64.buildinfo
+Files:
+ 7da8c9bf99cf98bf07d873dda511deb8 831 utils optional cbacklight_0.1-1.dsc
+ 1d010099d1f9c4db7ab8c5004e07d05f 1448 utils optional cbacklight_0.1.orig.tar.xz
+ fdf15c3f8b10d18b0d149328f146b2d8 7976 utils optional cbacklight_0.1-1.debian.tar.xz
+ c5f505140b7721e6a924fc315c039966 3142 utils optional cbacklight_0.1-1_all.deb
+ cc477cb8924b0fbf6118584bd6dbdd87 5132 utils optional cbacklight_0.1-1_amd64.buildinfo

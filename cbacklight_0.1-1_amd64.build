@@ -1,0 +1,72 @@
+ dpkg-buildpackage -rfakeroot -us -uc
+dpkg-buildpackage: info: source package cbacklight
+dpkg-buildpackage: info: source version 0.1-1
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Gorla Praveen <gorlapraveen@gmail.com>
+ dpkg-source --before-build cbacklight-0.1
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   dh_auto_clean
+   dh_clean
+ dpkg-source -b cbacklight-0.1
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building cbacklight using existing ./cbacklight_0.1.orig.tar.xz
+dpkg-source: info: building cbacklight in cbacklight_0.1-1.debian.tar.xz
+dpkg-source: info: building cbacklight in cbacklight_0.1-1.dsc
+ debian/rules build
+dh build
+   dh_testdir
+   dh_update_autotools_config
+   dh_auto_configure
+   dh_auto_build
+   dh_auto_test
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary
+   create-stamp debian/debhelper-build-stamp
+   dh_testroot
+   dh_prep
+   dh_auto_install
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'cbacklight' in '../cbacklight_0.1-1_all.deb'.
+ dpkg-genbuildinfo
+ dpkg-genchanges  >../cbacklight_0.1-1_amd64.changes
+dpkg-genchanges: info: including full source code in upload
+ dpkg-source --after-build cbacklight-0.1
+dpkg-buildpackage: info: full upload (original source is included)
+Now running lintian...
+W: cbacklight source: dh-make-template-in-source debian/cbacklight.cron.d.ex
+W: cbacklight source: dh-make-template-in-source debian/cbacklight.default.ex
+W: cbacklight source: dh-make-template-in-source debian/cbacklight.doc-base.EX
+W: cbacklight source: dh-make-template-in-source debian/manpage.1.ex
+W: cbacklight source: dh-make-template-in-source debian/manpage.sgml.ex
+W: cbacklight source: dh-make-template-in-source debian/manpage.xml.ex
+W: cbacklight source: dh-make-template-in-source debian/menu.ex
+W: cbacklight source: dh-make-template-in-source debian/postinst.ex
+W: cbacklight source: dh-make-template-in-source debian/postrm.ex
+W: cbacklight source: dh-make-template-in-source debian/preinst.ex
+W: cbacklight source: dh-make-template-in-source debian/prerm.ex
+W: cbacklight source: dh-make-template-in-source debian/watch.ex
+W: cbacklight source: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: cbacklight source: bad-homepage <insert the upstream URL, if relevant>
+W: cbacklight source: missing-field-in-dep5-copyright license (paragraph at line 6)
+W: cbacklight: new-package-should-close-itp-bug
+W: cbacklight: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
+W: cbacklight: bad-homepage <insert the upstream URL, if relevant>
+W: cbacklight: script-with-language-extension usr/bin/backlight.sh
+W: cbacklight: binary-without-manpage usr/bin/backlight.sh
+W: cbacklight: executable-not-elf-or-script usr/bin/backlight.sh
+Finished running lintian.

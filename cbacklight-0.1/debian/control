@@ -1,0 +1,17 @@
+Source: cbacklight
+Section: utils
+Priority: optional
+Maintainer: Gorla Praveen <gorlapraveen@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: https://anonscm.debian.org/collab-maint/cbacklight.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/cbacklight.git
+
+Package: cbacklight
+Architecture: all
+Depends: ${misc:Depends}
+Description:Commandline brightness
+ It increase brightness, decrease brightness, set brightness, current brightness
+ ,nightmode and daymode by running the commands in the command line interface.
+ 
