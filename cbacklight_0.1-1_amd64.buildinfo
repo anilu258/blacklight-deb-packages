@@ -4,17 +4,17 @@ Binary: cbacklight
 Architecture: all source
 Version: 0.1-1
 Checksums-Md5:
- 7da8c9bf99cf98bf07d873dda511deb8 831 cbacklight_0.1-1.dsc
- c5f505140b7721e6a924fc315c039966 3142 cbacklight_0.1-1_all.deb
+ ca71dbe2cda70ce3f6587f6107a8055d 831 cbacklight_0.1-1.dsc
+ b976011d6ec8658058356680d3c2ed8a 3152 cbacklight_0.1-1_all.deb
 Checksums-Sha1:
- 945fe5391349519879cd00b08dd25b8695112764 831 cbacklight_0.1-1.dsc
- f3739129e4537643e4b36b157f97407a5a9bb715 3142 cbacklight_0.1-1_all.deb
+ 88a317544d43ed166fc11da6b8fc9afcaf6cf44a 831 cbacklight_0.1-1.dsc
+ 7c005303b7f81fd0d1888733eb59c85597ca3807 3152 cbacklight_0.1-1_all.deb
 Checksums-Sha256:
- c3c37def53ce50ac511ca95d8bd0aa8ca194f2fc05c9c85c550ac8e13b972d02 831 cbacklight_0.1-1.dsc
- 5b37f47b1e7e6e122e61dc6eca58e9bc4a0893706bbd3277a1f546482364c656 3142 cbacklight_0.1-1_all.deb
+ 9113e9e7219c57803860d8bb59c177eba0bc0c84b6ffec8c960eb36e837c48e1 831 cbacklight_0.1-1.dsc
+ 66b7b74aad8ee41c8b04822bc1aedc09e4a1a822c5a85b62464b5a9c388c7995 3152 cbacklight_0.1-1_all.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Mon, 30 Jul 2018 09:31:03 +0700
+Build-Date: Wed, 01 Aug 2018 22:35:30 +0700
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),

@@ -1,2 +1,3 @@
-backlight.sh usr/bin
+backlight.sh usr/bin/
+backlight usr/bin/
 

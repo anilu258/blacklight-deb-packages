@@ -1,0 +1,147 @@
+Description: <short summary of the patch>
+ TODO: Put a short summary on the line above and replace this paragraph
+ with a longer explanation of this change. Complete the meta-information
+ with other relevant fields (see below for details). To make it easier, the
+ information below has been extracted from the changelog. Adjust it or drop
+ it.
+ .
+ cbacklight (0.1-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: )
+Author: Gorla Praveen <gorlapraveen@gmail.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: 2018-08-01
+
+--- /dev/null
++++ cbacklight-0.1/backlight
+@@ -0,0 +1,119 @@
++
++#!/bin/bash
++
++# backlight brightness controls. use freely
++# and adjust sysfs directory if not on intel
++# $author  praveen reddy gorla
++
++
++#!/bin/bash
++# backlight brightness controls. use freely
++# and adjust sysfs directory if not on intel
++
++
++#copyright (c) 2016 Author(s): Gorla Praven <gorlapraveen@gmail.com>
++#This program is free software: you can redistribute it and/or modify
++#it under the terms of the GNU General Public License as published by
++#the Free Software Foundation, either version 3 of the License, or (at your option) any later version.This program is distributed in the hope that it will be useful,
++#but WITHOUT ANY WARRANTY; without even the implied warranty of
++#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++#GNU General Public License for more details.
++#You should have received a copy of the GNU General Public License  along with this program.  If not, see <https://www.gnu.org/licenses/>.
++    
++
++sysfs="/sys/class/backlight/intel_backlight"
++max=`cat ${sysfs}/max_brightness`
++level=`cat ${sysfs}/brightness`
++
++
++usage()
++{
++script=${0##*/}
++echo
++echo "Invalid usage of ${script}!"
++echo "  $1"
++echo " "
++echo "------- Hello $USER, use the folowing to control the brightness level --------"
++echo "=============================================================================="
++echo "run                : backlight [commands] [options] "
++echo " "
++echo "[command]"
++echo "$script current    : Shows present brightness level with a max brightness level of  $max "
++echo "$script increase   : increases brightness"
++echo "$script decrease   : decreases brightness"
++echo "$script set        : sets brightness to an Integer "
++echo "$script nightmmode : Nightmode"
++echo "$script daymode    : Daymode"
++echo " "
++echo "[options]          : input integers form 1 to $max"
++echo "============================================================================="
++echo "Example usage      :'backlight increase' to increase brightness by one level"
++echo "Example usage      :'backlight set 300' to set brightness level to 300 in range of 1 to $max"
++echo "-------------------------------------Try Again-------------------------------"
++
++
++exit 1
++}
++
++set_brightness()
++{
++
++level=$1
++
++if [ $level -lt 1 ] ; then
++ level=1
++echo minimum  brightness level is $level
++elif [ $level -gt $max ] ; then
++ level=$max
++echo maximum brightness level accepted is $level
++fi
++ 
++echo $level > $sysfs/brightness 
++}
++
++case "$1" in
++   current)
++    let "level=level"
++ 
++    echo current brightness level as of on $(date +"%T") is $level
++;; 
++  increase)
++    let "level+=1"
++    set_brightness $level 
++    echo brightness levelset to $level
++    ;;
++  decrease)
++    let "level-=1"
++    set_brightness $level
++    echo brightness levelset to $level 
++    ;;
++
++ nightmode)
++   let "level=65"
++   set_brightness $level
++   NM=1
++   DM=0
++   echo Working on Night Mode
++   ;;
++ daymode)
++   let "level=712"
++   set_brightness $level
++   NM=0
++   DM=1
++  echo Working on Day Light Mode
++ ;;
++
++  set)
++    if [[ ! $2 =~ ^[[:digit:]]+$ ]]; then
++     usage " $USER please input an integer"
++    fi
++
++    set_brightness $2
++    echo brightness levelset to $level
++    ;;
++  *)
++
++    usage "invalid argument, Make a valid one among the following"
++
++  usage "invalid argument, Make a valid one among the following"
++esac

@@ -1,4 +1,5 @@
  dpkg-buildpackage -rfakeroot -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
 dpkg-buildpackage: info: source package cbacklight
 dpkg-buildpackage: info: source version 0.1-1
 dpkg-buildpackage: info: source distribution unstable
@@ -48,6 +49,7 @@ dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build cbacklight-0.1
 dpkg-buildpackage: info: full upload (original source is included)
 Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
 W: cbacklight source: dh-make-template-in-source debian/cbacklight.cron.d.ex
 W: cbacklight source: dh-make-template-in-source debian/cbacklight.default.ex
 W: cbacklight source: dh-make-template-in-source debian/cbacklight.doc-base.EX
@@ -67,6 +69,8 @@ W: cbacklight: new-package-should-close-itp-bug
 W: cbacklight: superfluous-clutter-in-homepage <insert the upstream URL, if relevant>
 W: cbacklight: bad-homepage <insert the upstream URL, if relevant>
 W: cbacklight: script-with-language-extension usr/bin/backlight.sh
+W: cbacklight: binary-without-manpage usr/bin/backlight
 W: cbacklight: binary-without-manpage usr/bin/backlight.sh
 W: cbacklight: executable-not-elf-or-script usr/bin/backlight.sh
+W: cbacklight: executable-not-elf-or-script usr/bin/backlight
 Finished running lintian.

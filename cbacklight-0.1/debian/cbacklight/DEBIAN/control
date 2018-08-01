@@ -2,7 +2,7 @@ Package: cbacklight
 Version: 0.1-1
 Architecture: all
 Maintainer: Gorla Praveen <gorlapraveen@gmail.com>
-Installed-Size: 16
+Installed-Size: 20
 Section: utils
 Priority: optional
 Homepage: <insert the upstream URL, if relevant>
