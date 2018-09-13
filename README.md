@@ -7,7 +7,7 @@ cbacklight for Debian
 A simple bash script for linux to increase brightness, decrease brightness, set brightnes, current brightnes,nightmode and daymode by running the commands in your terminal.
 For example as a root user run : "backblacklight nightmode" in your terminal for nightmod
 
-#Usage: After Installation:
+## Usage: After Installation:
 
 ==============================================================================
 
@@ -24,12 +24,12 @@ run                : backlight [commands] [options]
 
      [options]         : input integers form 1 to maximum brightness
 
-Example usage :  To increase brightness by one level. Run the following in Command Line Interface.
+**Example usage** :  To increase brightness by one level. Run the following in Command Line Interface.
 
              backlight increase
 
-Example usage : To set brightness level to 300 in range of 1 to maximum brightness(for Intel processors the max brigntness may be 937 in integer number). Run the following in Command Line Interface.
+**Example usage** : To set brightness level to 300 in range of 1 to maximum brightness(for Intel processors the max brigntness may be 937 in integer number). Run the following in Command Line Interface.
 
              backlight set 300 
 
-Contributor: Gorla Praveen
+Contributor: @gorlapraveen 
