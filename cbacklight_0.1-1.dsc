@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
 Format: 3.0 (quilt)
 Source: cbacklight
 Binary: cbacklight
@@ -18,3 +21,20 @@ Checksums-Sha256:
 Files:
  1d010099d1f9c4db7ab8c5004e07d05f 1448 cbacklight_0.1.orig.tar.xz
  368aa0efff710bbe4b6eb804782db162 9256 cbacklight_0.1-1.debian.tar.xz
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEzdk+ztG/3iNWXvRUN155fk1sjboFAluifPMACgkQN155fk1s
+jbqmGxAAuBf4tiJCFXnnuxv9RfEPgBjrUnVOZkapc2MBmB5pK6Q97xpLabg0SnGr
+WK4kBT3X9Fy7TV1+m7k0x8graezxsNJZhKCllKw31B7yJKNG83Ru47ZkKFtBjvpZ
+i5ACu9cJjLcCOF9wHQgECCqej+DgKW5+oKdAmpYMWBUW9Egs3m+6gY9sEFiQAJvZ
+dC62rCdnS6fhDH7Kdw9TFRnJzl1rYXdlSyoI8i8B/t2qsPG69CdexUtZdvVGWZe3
+4UyPNocN6OqgQzLf4S3RE3RKPaLmzAeVlfA4ZUIAwTMU3mnsL2Uw+OmQIFK2U8fM
+g8D/NylMqokZEyKrPa01asf/sOlVotREuTE7r5oNzhjOy+p8lYQEo6nIBpHxhCM3
+tefliD5W9vxnGzGE1qpXMnY6Ct6cnuES29yCZD4q4fQFywnBOY3RlnshwPV1iLE6
+WQtS/OUXVTsfY89Pd8oTPhYjF7tuCJRWwpB1Gl2UpZf3nlDECbSFgc7eLLZDKfIc
+qig/zHAmDKrrl+eGEtqeLTnHr6l1+gDNzAw9/6cIuv9TT5W9TI+tzxtTEpmskBs2
+qSkXzTW25LqzjvbpD5DNZcjE6TOWNshw+B3QFs6ndfVEtJCNQQy/q4Nxenzc46An
+WfG7gIflRdQdCXcM0AOJD6EfzJqDE4F1WKB7jJWbbCP4MbP4gE0=
+=ci0T
+-----END PGP SIGNATURE-----

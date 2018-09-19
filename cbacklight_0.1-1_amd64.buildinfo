@@ -14,7 +14,7 @@ Checksums-Sha256:
  66b7b74aad8ee41c8b04822bc1aedc09e4a1a822c5a85b62464b5a9c388c7995 3152 cbacklight_0.1-1_all.deb
 Build-Origin: Debian
 Build-Architecture: amd64
-Build-Date: Wed, 01 Aug 2018 22:35:30 +0700
+Build-Date: Wed, 19 Sep 2018 23:43:39 +0700
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
@@ -143,7 +143,7 @@ Installed-Build-Depends:
  libustr-1.0-1 (= 1.0.4-6),
  libuuid1 (= 2.29.2-1+deb9u1),
  libxml2 (= 2.9.4+dfsg1-2.2+deb9u2),
- linux-libc-dev (= 4.9.110-1),
+ linux-libc-dev (= 4.9.110-3+deb9u4),
  login (= 1:4.4-4.1),
  m4 (= 1.4.18-1),
  make (= 4.1-9.1),

@@ -19,16 +19,16 @@ Checksums-Sha1:
  bb7062c8b25e6b6947927df38f3cbee62009c77a 1448 cbacklight_0.1.orig.tar.xz
  fcb9be502031f02ebee4a18d2c84f94385ac5d4f 9256 cbacklight_0.1-1.debian.tar.xz
  7c005303b7f81fd0d1888733eb59c85597ca3807 3152 cbacklight_0.1-1_all.deb
- 3e9f3c49b614b2d050689629861ad245e1f77bc2 5132 cbacklight_0.1-1_amd64.buildinfo
+ 25d1ee63b6e81f369d0b7a9452dd2852513b4cf6 5139 cbacklight_0.1-1_amd64.buildinfo
 Checksums-Sha256:
  9113e9e7219c57803860d8bb59c177eba0bc0c84b6ffec8c960eb36e837c48e1 831 cbacklight_0.1-1.dsc
  afd1e65b032bbbbe88a86b8b96566409ccb5943ead978b7b44690cce17318275 1448 cbacklight_0.1.orig.tar.xz
  c40730dfc73fb01bfc30ef4f18c313b34a75f9094bcf2805d95a1eab1da19080 9256 cbacklight_0.1-1.debian.tar.xz
  66b7b74aad8ee41c8b04822bc1aedc09e4a1a822c5a85b62464b5a9c388c7995 3152 cbacklight_0.1-1_all.deb
- b35d2a2988392f2700c1e7b506222086951c1e2311adfe191267424b4d291dfa 5132 cbacklight_0.1-1_amd64.buildinfo
+ 69b77c8267c3c1a491d8fc28f441de3d63d6b1da86d4a2af084577ee787dcd4f 5139 cbacklight_0.1-1_amd64.buildinfo
 Files:
  ca71dbe2cda70ce3f6587f6107a8055d 831 utils optional cbacklight_0.1-1.dsc
  1d010099d1f9c4db7ab8c5004e07d05f 1448 utils optional cbacklight_0.1.orig.tar.xz
  368aa0efff710bbe4b6eb804782db162 9256 utils optional cbacklight_0.1-1.debian.tar.xz
  b976011d6ec8658058356680d3c2ed8a 3152 utils optional cbacklight_0.1-1_all.deb
- c38e196a32c78ca76ba0292bda5bc54a 5132 utils optional cbacklight_0.1-1_amd64.buildinfo
+ 9b92fb1cefe7f907a6baf49d3a37cc8e 5139 utils optional cbacklight_0.1-1_amd64.buildinfo
