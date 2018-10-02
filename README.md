@@ -4,9 +4,11 @@ cbacklight for Debian
  -- Gorla PRaveen <gorlapraveen@gmail.com>  Mon, 30 Jul 2018 08:24:02 +0700
 
 # brightness_bashshell_script #
+
 _*A simple bash script for linux to increase brightness, decrease brightness, set brightnes, current brightnes,nightmode and daymode by running the commands in your terminal.*_
 For example, as a root user run : `backblacklight nightmode` in your terminal for nightmode.
 ------------------------------------------------------------------------------------------
+
 ##Debian(.deb) Package Installation[& Uninstallation] Procedure##
 
 * In Linux Terminal Command Line enter `apt search cbacklight*` In general for any other packages like`package_name` installation, you can use`apt search package_name`.
