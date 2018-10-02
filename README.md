@@ -11,6 +11,8 @@ For example, as a root user run : `backblacklight nightmode` in your terminal fo
 
 ## Debian(.deb) Package Installation[& Uninstallation] Procedure
 
+**Installation**
+
 * In Linux Terminal Command Line enter `apt search cbacklight*` In general for any other packages like`package_name` installation, you can use`apt search package_name`.
 * If packages is found in the list then, in terminal, `apt install cbacklight*`. But, if package is not available then go to next step.
 
@@ -18,13 +20,15 @@ For example, as a root user run : `backblacklight nightmode` in your terminal fo
 (or)
 
 * Download debian package(.deb) from [Debain Package Repository](https://packages.debian.org)(if package is available) or else clone the package from this repository using `git clone https://gitlab.com/gorlapraveen/blacklight-deb-packages.git`
- * The enter the following commands in command line termianl.
+ * Then enter the following commands in command line termianl.
 
         cd blacklight-deb-packages
         dpkg -i *.deb 
-     ##In general for package installation `dpkg -i package_name.deb` or `dpkg -i *.deb`(for installing all deb packages in the directory).
+     ##In general for Debian(.deb) based package installation `dpkg -i package_name.deb` or `dpkg -i *.deb`(for installing all deb packages in the directory).
 
 
+**Un-Install**
+Use `apt purge cbacklight*` for complete remove of package.
 
 
 ## Usage: After Installation:
