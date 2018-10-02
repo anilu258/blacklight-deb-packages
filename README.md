@@ -9,7 +9,7 @@ _*A simple bash script for linux to increase brightness, decrease brightness, se
 For example, as a root user run : `backblacklight nightmode` in your terminal for nightmode.
 
 
-##Debian(.deb) Package Installation[& Uninstallation] Procedure
+## Debian(.deb) Package Installation[& Uninstallation] Procedure
 
 * In Linux Terminal Command Line enter `apt search cbacklight*` In general for any other packages like`package_name` installation, you can use`apt search package_name`.
 * If packages is found in the list then, in terminal, `apt install cbacklight*`. But, if package is not available then go to next step.
