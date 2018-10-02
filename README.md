@@ -28,6 +28,7 @@ For example, as a root user run : `backblacklight nightmode` in your terminal fo
 
 
 **Un-Install**
+
 Use `apt purge cbacklight*` for complete remove of package.
 
 
